@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import os
 import os.path
 import math
@@ -23,7 +25,7 @@ from mappings import color_map, name_map
 # Option remains for legacy usage
 # equal to running
 # python main.py --verbose
-verbose_mode = False
+verbose_mode = True
 
 
 # function to convert rgb tuple to hexadecimal string
@@ -393,7 +395,12 @@ def task(credentials_index):
 
                 logging.debug(f"Received response: {r.text}")
                 response_data = r.json()
-                access_tokens[credentials_index] = response_data["access_token"]
+                try:
+                    access_tokens[credentials_index] = response_data["access_token"]
+                except KeyError:
+                    repeat_forever = False
+                    logging.fatal(f"Bad account {username}")
+                    break
                 # access_token_type = response_data["token_type"]  # this is just "bearer"
                 access_token_expires_in_seconds = response_data[
                     "expires_in"
