@@ -27,7 +27,7 @@ Steps:
 
 ## Python Package Requirements
 
-Install requirements from 'requirements.txt' file.
+You must go to command line, navigate to the unpacked ZIP file folder and type Install requirements from 'requirements.txt' file.
 
 ```shell
 pip3 install -r requirements.txt
