@@ -2,7 +2,7 @@
 
 This is a script will automatically draw the Iranian flag, 1 pixel every 5 minutes onto r/place (<https://www.reddit.com/r/place/>).
 
-<img src="image.png" width="500"/>
+<img src="draw.png" width="500"/>
 
 ## Installation
 
