@@ -9,6 +9,8 @@ This is a script will automatically draw the Iranian flag, 1 pixel every 5 minut
 Make sure you have Python 3 installed:
 - [Python 3](https://www.python.org/downloads/)
 
+Click the green "Code" button and click "Download ZIP" and unpack on your computer.
+
 ### Get a reddit App Client ID and App Secret Key
 
 You need to generate an app client id and app secret key for each account in order to use this script.
