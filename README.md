@@ -1,8 +1,14 @@
 # Draws Iran's map onto r/place
 
-This is a script will automatically draw the Iranian flag, 1 pixel every 5 minutes onto r/place (<https://www.reddit.com/r/place/>). It scans the current map, then if it finds a pixel that has the wrong colour, it will replace it with the right colour. Then it waits for 5 minutes until the next slot is available and do it again until it's a perfect match.
+This is a script will automatically draw the Iranian flag, 1 pixel every 5 minutes onto r/place (<https://www.reddit.com/r/place/>). It scans the current map, then if it finds a pixel that has the wrong colour, it will replace it with the right colour. Then it waits for 5 minutes until the next slot is available and do it again until it's a perfect match. It's possible to make it run multiple reddit accounts.
+
+This is what it will draw:
 
 <img src="draw.png" width="500"/>
+
+If you want to manually help, here are the coordinates:
+
+<img src="manual.png" width="500"/>
 
 ## Installation
 
